@@ -6,7 +6,7 @@ relative_permalinks: true
 
 # Setup
 title:               UHN Development
-tagline:             'A Jekyll theme'
+tagline:             ''
 description:         'A development blog dedicated to discussing solutions to some of the technical challenges we’ve come across here at UHN.'
 url:                 http://uhndev.github.io
 baseurl:             ''
