@@ -1,7 +1,5 @@
 ---
-published: false
+-layout: post
+-title: Hello World
 ---
-
-## Hello World
-
 An obligatory hello world post.
