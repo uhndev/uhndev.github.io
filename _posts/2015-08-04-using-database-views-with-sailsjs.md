@@ -32,8 +32,8 @@ So after our base models are in place, we need a couple more steps:
 
 1. Create associated model [file](https://github.com/uhndev/sails-views-example/blob/master/api/models/customersale.js) representing our database view
 2. Write SQL [script](https://github.com/uhndev/sails-views-example/blob/master/config/db/customersale.sql) which will create the desired database view
-```
-CREATE OR REPLACE VIEW customersale AS 
+{% highlight sql %}
+CREATE OR REPLACE VIEW customersale AS
  SELECT customer.id,
     customer.name AS customerName,
     product.name AS productName,
@@ -45,7 +45,7 @@ CREATE OR REPLACE VIEW customersale AS
    FROM sale
      LEFT JOIN product ON sale.product = product.id
      LEFT JOIN customer ON sale.customer = customer.id;
-```
+{% endhighlight %}
 3. Setup sails [hook](https://github.com/uhndev/sails-views-example/blob/master/api/hooks/sails-drop-views.js) to drop views before the application lifts
 4. Setup sails [hook](https://github.com/uhndev/sails-views-example/blob/master/api/hooks/sails-create-views.js) to recreate views after the ORM has loaded
 
