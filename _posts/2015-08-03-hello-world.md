@@ -1,5 +1,6 @@
 ---
--layout: post
--title: Hello World
+layout: post
+title: Hello World
 ---
+
 An obligatory hello world post.
